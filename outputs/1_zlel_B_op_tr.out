@@ -1,0 +1,14 @@
+
+========== Nodes voltage to reference ========
+e1 =  [ 10.]
+
+========== Branches voltage difference ========
+v1 =  [ 10.]
+v2 =  [ 10.]
+
+=============== Branches currents ==============
+i1 =  [ 0.01]
+i2 =  [-0.01]
+
+================= End solution =================
+

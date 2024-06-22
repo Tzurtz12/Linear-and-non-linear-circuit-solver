@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>zlel package &#8212; ZLEL 0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="zlel-package">
+<h1>zlel package<a class="headerlink" href="#zlel-package" title="Permalink to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="module-zlel.zlel_p1">
+<span id="zlel-zlel-p1-module"></span><h2>zlel.zlel_p1 module<a class="headerlink" href="#module-zlel.zlel_p1" title="Permalink to this heading">¶</a></h2>
+<span class="target" id="module-zlel_main.py"></span><dl class="py function">
+<dt class="sig sig-object py" id="zlel.zlel_p1.cir_parser">
+<span class="sig-prename descclassname"><span class="pre">zlel.zlel_p1.</span></span><span class="sig-name descname"><span class="pre">cir_parser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zlel/zlel_p1.html#cir_parser"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zlel.zlel_p1.cir_parser" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>This function takes a .cir test circuit and parse it into
+4 matices.
+If the file has not the proper dimensions it warns and exit.</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Args:</dt><dd><p>filename: string with the name of the file</p>
+</dd>
+<dt>Returns:</dt><dd><p>cir_el: np array of strings with the elements to parse. size(1,b)
+cir_nd: np array with the nodes to the circuit. size(b,4)
+cir_val: np array with the values of the elements. size(b,3)
+cir_ctrl: np array of strings with the element which branch
+controls the controlled sources. size(1,b)</p>
+</dd>
+<dt>Rises:</dt><dd><p>SystemExit</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="zlel.zlel_p1.print_cir_info">
+<span class="sig-prename descclassname"><span class="pre">zlel.zlel_p1.</span></span><span class="sig-name descname"><span class="pre">print_cir_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cir_el</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cir_nd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">el_num</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zlel/zlel_p1.html#print_cir_info"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zlel.zlel_p1.print_cir_info" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Prints the info of the circuit:</dt><dd><p>1.- Elements info
+2.- Node info
+3.- Branch info
+4.- Variable info</p>
+</dd>
+<dt>Args:</dt><dd><p>cir_el: reshaped cir_el
+cir_nd: reshaped cir_nd. Now it will be a (b,2) matrix
+b: # of branches
+n: # number of nodes
+nodes: an array with the circuit nodes sorted
+el_num:  the # of elements.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-zlel">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-zlel" title="Permalink to this heading">¶</a></h2>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">ZLEL</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Urtzi Jauregi (ujauregi002@ikasle.ehu.eus), Jon Gaminde (jgaminde002@iksale.heu.eus).
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.0.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/zlel.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

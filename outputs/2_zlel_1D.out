@@ -1,0 +1,32 @@
+3 Elements
+3 Different nodes: [0 1 2]
+
+3 Branches: 
+	1. branch:	V1,	i1,	v1=e1-e0
+	2. branch:	D1,	i2,	v2=e1-e2
+	3. branch:	R1,	i3,	v3=e2-e0
+
+8 variables: 
+e1, e2, i1, i2, i3, v1, v2, v3
+
+Incidence Matrix: 
+[[-1  0 -1]
+ [ 1  1  0]
+ [ 0 -1  1]]
+
+========== Nodes voltage to reference ========
+e1 =  [ 5.]
+e2 =  [ 4.36663014]
+
+========== Branches voltage difference ========
+v1 =  [ 5.]
+v2 =  [ 0.63336986]
+v3 =  [ 4.36663014]
+
+=============== Branches currents ==============
+i1 =  [-0.00436663]
+i2 =  [ 0.00436663]
+i3 =  [ 0.00436663]
+
+================= End solution =================
+

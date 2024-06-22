@@ -1,0 +1,15 @@
+4 Elements
+2 Different nodes: [0 1]
+
+4 Branches: 
+	1. branch:	I1,	i1,	v1=e0-e1
+	2. branch:	I3,	i2,	v2=e0-e1
+	3. branch:	I2,	i3,	v3=e1-e0
+	4. branch:	R1,	i4,	v4=e1-e0
+
+9 variables: 
+e1, i1, i2, i3, i4, v1, v2, v3, v4
+
+Incidence Matrix: 
+[[ 1  1 -1 -1]
+ [-1 -1  1  1]]

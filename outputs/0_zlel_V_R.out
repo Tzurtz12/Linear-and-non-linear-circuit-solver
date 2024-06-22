@@ -1,0 +1,13 @@
+2 Elements
+2 Different nodes: [0 1]
+
+2 Branches: 
+	1. branch:	V1,	i1,	v1=e1-e0
+	2. branch:	R1,	i2,	v2=e1-e0
+
+5 variables: 
+e1, i1, i2, v1, v2
+
+Incidence Matrix: 
+[[-1 -1]
+ [ 1  1]]

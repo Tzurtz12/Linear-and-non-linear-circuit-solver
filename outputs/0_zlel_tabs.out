@@ -1,0 +1,23 @@
+8 Elements
+5 Different nodes: [ 0  1  2  7 20]
+
+9 Branches: 
+	1. branch:	V1,	i1,	v1=e1-e0
+	2. branch:	R1,	i2,	v2=e1-e2
+	3. branch:	R2,	i3,	v3=e2-e20
+	4. branch:	R4,	i4,	v4=e0-e20
+	5. branch:	Q1_be,	i5,	v5=e20-e0
+	6. branch:	Q1_bc,	i6,	v6=e20-e2
+	7. branch:	R3,	i7,	v7=e2-e7
+	8. branch:	rab,	i8,	v8=e7-e0
+	9. branch:	gm,	i9,	v9=e0-e7
+
+22 variables: 
+e1, e2, e7, e20, i1, i2, i3, i4, i5, i6, i7, i8, i9, v1, v2, v3, v4, v5, v6, v7, v8, v9
+
+Incidence Matrix: 
+[[-1  0  0  1 -1  0  0 -1  1]
+ [ 1  1  0  0  0  0  0  0  0]
+ [ 0 -1  1  0  0 -1  1  0  0]
+ [ 0  0  0  0  0  0 -1  1 -1]
+ [ 0  0 -1 -1  1  1  0  0  0]]
