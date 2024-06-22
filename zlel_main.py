@@ -4,7 +4,7 @@
 .. module:: zlel_main.py
     :synopsis:
 
-.. moduleauthor:: YOUR NAME AND E-MAIL
+.. moduleauthor:: Jon Gaminde and Urtzi Jauregi
 
 
 """
@@ -25,14 +25,14 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         filename = sys.argv[1]
     else:
-        filename = "cirs/opamp/0_zlel_OPAMP.cir"
-    # Parse the circuit
-    [cir_el, cir_nd, cir_val, cir_ctrl] = zl1.cir_parser(filename)
-    # zl1.cir_parser(filename)
-    [cir_el_r, cir_nd_r, b, n, nodes, el_num] = zl1.cir_reshape(cir_el, cir_nd,
-                                                                cir_val,
-                                                                cir_ctrl)
-    zl1.print_cir_info(cir_el_r, cir_nd_r, b, n, nodes, el_num)
-    zl1.print_incidence_matrix(cir_nd_r, b, n, nodes)
-
-    # THIS FUNCTION IS NOT COMPLETE
+        filename = "cirs/4_zlel_N.cir"
+    [cir_el, cir_nd, cir_val, cir_ctrl, analisis] = zl2.cir_parser(filename)
+    [cir_el_r, cir_nd_r, cir_val_r,
+     cir_ctrl_r, b, n, nodes, el_num, lineal,
+     not_lin_elem, dynamic, dyn_elem] = zl4.cir_reshape(
+         cir_el, cir_nd, cir_val, cir_ctrl)
+    Aa = zl1.incidence_matrix(cir_nd_r, b, n, nodes)
+    zl1.check_inc_mat(cir_el, cir_nd, cir_val, cir_ctrl, Aa)
+    sol = zl4.do_analisis(cir_el_r, cir_nd_r, cir_val_r, cir_ctrl_r, el_num,
+                          analisis, Aa, n, b, nodes, lineal, not_lin_elem,
+                          dynamic, dyn_elem, filename)

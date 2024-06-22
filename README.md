@@ -1,5 +1,7 @@
 # Electronic Circuit Simulation
 
+**Authors:** Jon Gaminde del Hoyo and Urtzi Jauregi Aberasturi
+
 Welcome to the Electronic Circuit Simulation repository! This project allows you to simulate both linear and non-linear electronic circuits using Python's NumPy library.
 
 ## Features
